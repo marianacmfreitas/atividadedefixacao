@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script>
-        function cor(){
+  <script>
+        function mudar(){
             var div = document.querySelector('div')
             div.style.backgroundColor = 'red'
-            div.style.width = '300px'
+        }
+
+        function voltar(){
+            var div = document.querySelector('div')
+            div.style.backgroundColor = 'blue'
         }
     </script>
 </head>
 
 <body>
 
-    <div style="width: 100px; height: 100px;"></div>
-
-    <button onclick="cor()">Clique Aqui</button>
+    <div 
+        onmouseover="mudar()" 
+        onmouseout="voltar()"
+        style="width: 200px; height: 200px; background-color: blue;">
+    </div>
 
 </body>
 </html>

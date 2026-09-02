@@ -8,17 +8,19 @@
     <script>
         function cor(){
             var div = document.querySelector('div')
-            div.style.backgroundColor = 'red'
-            div.style.width = '300px'
+            var cores = ['red', 'blue', 'green', 'yellow', 'purple']
+            var numero = Math.floor(Math.random() * cores.length)
+
+            div.style.backgroundColor = cores[numero]
         }
     </script>
 </head>
 
 <body>
 
-    <div style="width: 100px; height: 100px;"></div>
+    <div style="width: 200px; height: 200px;"></div>
 
-    <button onclick="cor()">Clique Aqui</button>
+    <button onclick="cor()">Mudar cor</button>
 
 </body>
 </html>
