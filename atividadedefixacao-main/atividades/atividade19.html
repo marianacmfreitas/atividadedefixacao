@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function cor(){
+            var div = document.querySelector('div')
+            var cores = ['red', 'blue', 'green', 'yellow', 'purple']
+            var numero = Math.floor(Math.random() * cores.length)
+
+            div.style.backgroundColor = cores[numero]
+        }
+    </script>
+</head>
+
+<body>
+
+    <div style="width: 200px; height: 200px;"></div>
+
+    <button onclick="cor()">Mudar cor</button>
+
+</body>
+</html>

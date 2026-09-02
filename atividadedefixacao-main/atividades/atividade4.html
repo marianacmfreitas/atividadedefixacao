@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function textos(){
+            var primeiro = document.querySelector('#primeiro')
+            var segundo = document.querySelector('#segundo')
+            var terceiro = document.querySelector('#terceiro')
+
+            var novo1 = document.createElement('p')
+            novo1.innerHTML = 'Novo elemento'
+
+            var novo2 = document.createElement('p')
+            novo2.innerHTML = 'Segundo elemento'
+
+            var novo3 = document.createElement('p')
+            novo3.innerHTML = 'Terceiro elemento'
+
+            console.log (primeiro.appendChild(novo1))
+            console.log (segundo.appendChild(novo2))
+            console.log (terceiro.appendChild(novo3))
+        }
+    </script>
+</head>
+<body>
+    
+        <p id="primeiro"></p>
+        <p id="segundo"></p>
+        <p id="terceiro"></p>
+
+    
+    <button onclick="textos()">Clique Aqui</button>
+</body>
+</html>
